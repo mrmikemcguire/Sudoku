@@ -11,6 +11,7 @@ public class Generator
 	public static void main(String[] args) throws IOException
 		{
 		fillGrid();
+		testGrid();
 
 		}
 
@@ -23,6 +24,18 @@ public class Generator
 				{
 				grid[row][col] = seed.nextInt();
 				}
+			}
+		}
+	
+	public static void testGrid()
+		{
+		for(int row = 0; row < 9; row++)
+			{
+			for(int col = 0; col < 9; col++)
+				{
+				System.out.print(grid[row][col] + " ");
+				}
+			System.out.println();
 			}
 		}
 	}
